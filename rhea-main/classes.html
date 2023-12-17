@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/classes.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/aea1d15b30.js" crossorigin="anonymous"></script>
+    <title>WeSTZ | Dance Classes | Stz Camp
+    </title>
+</head>
+<body>
+    <nav class="navbar">
+        <nav class="homebar">
+            <a href="home.html" class="logo"><img src="style/images/whitestz.png" alt=""></a>
+            <ul>
+                <a href="home.html"><li>Home</li></a>
+                <a href="classes.html"><li>Classes</li></a>
+                <a href="services.html"><li>STZ Camp</li></a>
+                <a href="contact.html"><li>Contact Us</li></a>
+            </ul>
+        </nav>
+        <nav class="sidebar">
+            <ul>
+                <a href="profile.html"><i class="fa-regular fa-user"></i></a>
+                <div class="dropdown">
+                    <li><i class="fa-solid fa-bars"></i></li>
+                    <div class="dropdown-content">
+                        <a href="login.html" id="log-out">Log Out</a>
+                    </div>
+                </div>
+            </ul>
+        </nav>
+    </nav>
+    <div class="base-body">
+        <div class="container">
+            <h1>CLASSES</h1>
+            <div class="box-container">
+                <div class="box">
+                    <div class="box-image">
+                        <img src="style/images/classes1.jpg" alt="">
+                    </div>
+                    <div class="box-text">
+                        <h1>John Rey Tabaloc</h1>
+                        <p>Master Class</p>
+                        <p class="text-bold">Schedule <br><span>1:00 PM - 3:00 PM</span></p>
+                        <p class="text-bold">Price <br><span>PHP 350</span></p>
+                        <button onclick="openPopup()">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-image">
+                        <img src="style/images/classes2.jpg" alt="">
+                    </div>
+                    <div class="box-text">
+                        <h1>Ivan Tan</h1>
+                        <p>Open Style</p>
+                        <p class="text-bold">Schedule <br><span>3:00 PM - 5:00 PM</span></p>
+                        <p class="text-bold">Price <br><span>PHP 350</span></p>
+                        <button onclick="openPopup()">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="box-container">
+                <div class="box">
+                    <div class="box-image">
+                        <img src="style/images/classes3.jpg" alt="">
+                    </div>
+                    <div class="box-text">
+                        <h1>Maku Alvarez</h1>
+                        <p>Open Style</p>
+                        <p class="text-bold">Schedule <br><span>5:00 PM - 7:00 PM</span></p>
+                        <p class="text-bold">Price <br><span>PHP 350</span></p>
+                        <button onclick="openPopup()">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-image">
+                        <img src="style/images/classes4.jpg" alt="">
+                    </div>
+                    <div class="box-text">
+                        <h1>Angelu Pateres</h1>
+                        <p>Hiphop Class</p>
+                        <p class="text-bold">Schedule <br><span>7:00 PM - 9:00 PM</span></p>
+                        <p class="text-bold">Price <br><span>PHP 350</span></p>
+                        <button onclick="openPopup()">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="box-container">
+                <div class="box">
+                    <div class="box-image">
+                        <img src="style/images/classes5.jpg" alt="">
+                    </div>
+                    <div class="box-text">
+                        <h1>Orville</h1>
+                        <p>Dancehall</p>
+                        <p class="text-bold">Schedule <br><span>11:00 AM - 1:00 PM</span></p>
+                        <p class="text-bold">Price <br><span>PHP 350</span></p>
+                        <button onclick="openPopup()">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-image">
+                        <img src="style/images/classes6.jpg" alt="">
+                    </div>
+                    <div class="box-text">
+                        <h1>Rovynne Jabas</h1>
+                        <p>Sexy Class</p>
+                        <p class="text-bold">Schedule <br><span>1:00 PM - 5:00 PM</span></p>
+                        <p class="text-bold">Price <br><span>PHP 350</span></p>
+                        <button onclick="openPopup()">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="container-popup" id="popup">
+
+                <h2>Confirm Class</h2>
+
+                <label for="class">Instructor Name</label>
+                <input type="text" placeholder="Class Name" id="class">
+
+                <label for="email">Email</label>
+                <input type="email" placeholder="Email" id="email">
+
+                <label for="sched">Class Schedule</label>
+                <input type="time" placeholder="Class Schedule" id="sched">
+
+                <label for="name">Student Name</label>
+                <input type="text" placeholder="Student Name" id="name">
+
+                <label for="phone">Mobile Number</label>
+                <input type="tel" placeholder="Mobile Number" id="phone">
+
+                <label for="category">Class Category</label>
+                <select name="classcategory" id="category">
+                    <option value="face-to-face">Face to Face</option>
+                    <option value="online">Online</option>
+                </select>
+
+                <div class="popup-buttons">
+                    <button onclick="closePopup()">Close</button>
+                    <button onclick="submit()">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-top">
+                <a href="contact.html"><p>Contact Us</p></a>
+            </div>
+            <div class="socialIcons">
+                <a href="https://www.facebook.com/WeSteeze?mibextid=YMEMSu"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/we_steeze?igshid=OGQ5ZDc2ODk2ZA=="><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@westeeze?_t=8iB03T2cN6o&_r=1"><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023, STZ</p>
+            </div>
+        </div>
+    </footer>
+    <script src="system/classes.js"></script>
+</body>
+</html>
